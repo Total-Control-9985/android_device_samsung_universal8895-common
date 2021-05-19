@@ -123,8 +123,7 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.0-service
 
 # HIDL Manifest
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/manifest.xml:$(TARGET_COPY_OUT_VENDOR)/manifest.xml
+DEVICE_MANIFEST_FILE += $(LOCAL_PATH)/manifest.xml
 
 # HotwordEnrollement app permissions
 PRODUCT_COPY_FILES += \
