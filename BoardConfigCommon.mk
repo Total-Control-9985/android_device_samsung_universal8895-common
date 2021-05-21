@@ -50,7 +50,7 @@ TARGET_2ND_ARCH := arm
 TARGET_2ND_ARCH_VARIANT := armv8-a
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
-TARGET_CPU_VARIANT := generic
+TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a53.a57
 
 # Binder
@@ -141,6 +141,9 @@ WIFI_HIDL_FEATURE_DISABLE_AP_MAC_RANDOMIZATION := true
 
 # MACLOADER
 BOARD_HAVE_SAMSUNG_WIFI          := true
+
+# HIDL
+DEVICE_MANIFEST_FILE             := $(LOCAL_PATH)/manifest.xml
 
 # SEPOLICY
 include device/havoc/sepolicy/exynos/sepolicy.mk
