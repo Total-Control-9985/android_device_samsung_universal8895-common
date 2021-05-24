@@ -147,6 +147,7 @@ DEVICE_MANIFEST_FILE             := $(LOCAL_PATH)/manifest.xml
 
 # SEPOLICY
 include device/havoc/sepolicy/exynos/sepolicy.mk
+include device/samsung_slsi/sepolicy/sepolicy.mk
 
 BOARD_SEPOLICY_TEE_FLAVOR        := mobicore
 

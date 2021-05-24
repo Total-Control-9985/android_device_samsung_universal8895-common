@@ -1,3 +1,6 @@
+# gatekeeper_efs_file is defined in file.te
 allow hal_gatekeeper_default gatekeeper_efs_file:file rw_file_perms;
 allow hal_gatekeeper_default gatekeeper_efs_file:dir search;
+
+# efs_file is already defined somewhere
 allow hal_gatekeeper_default efs_file:dir search;

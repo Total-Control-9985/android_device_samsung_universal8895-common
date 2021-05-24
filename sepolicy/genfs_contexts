@@ -71,13 +71,17 @@ genfscon sysfs /devices/virtual/camera/flash/rear_flash      u:object_r:sysfs_ca
 genfscon sysfs /devices/virtual/input/input3                 u:object_r:sysfs_sensors_writable:s0
 genfscon sysfs /devices/virtual/input/input4                 u:object_r:sysfs_sensors_writable:s0
 
-genfscon sysfs /devices/virtual/sec/switch                          u:object_r:sysfs_sec_switch:s0
+# duplicate entrie
+#genfscon sysfs /devices/virtual/sec/switch                          u:object_r:sysfs_sec_switch:s0
+
 genfscon sysfs /devices/virtual/sec/sensorhub/mcu_power             u:object_r:sysfs_sensorhub_writable:s0
 genfscon sysfs /devices/virtual/usb_notify/usb_control/usb_hw_param u:object_r:sysfs_usb_writable:s0
 
 genfscon sysfs /firmware/devicetree/base/argos                 u:object_r:sysfs_argos:s0
 genfscon sysfs /firmware/devicetree/base/model_info-system_rev u:object_r:sysfs_info:s0
 
+# type sysfs_gpu is not defined or is an attribute
 genfscon sysfs /kernel/gpu/                    u:object_r:sysfs_gpu:s0
+
 genfscon sysfs /kernel/gpu/gpu_max_clock       u:object_r:sysfs_gpu_writable:s0
 genfscon sysfs /kernel/gpu/gpu_min_clock       u:object_r:sysfs_gpu_writable:s0
