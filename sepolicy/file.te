@@ -33,6 +33,8 @@ type gatekeeper_efs_file, file_type;
 type sysfs_batteryinfo_charger_writable, sysfs_type, rw_fs_type, fs_type;
 type sysfs_camera_writable, sysfs_type, rw_fs_type, fs_type;
 type sysfs_decon, sysfs_type, r_fs_type, fs_type;
+
+# type sysfs_gpu is not defined or is an attribute
 type sysfs_gpu, sysfs_type, r_fs_type, fs_type;
 
 # duplicate declaration
